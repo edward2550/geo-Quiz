@@ -1,0 +1,130 @@
+body {
+margin: 0;
+padding: 0;
+background: url(https://picsum.photos/id/460/4476/2984) no-repeat;
+background-size: cover;
+}
+nav {
+    background:grey;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    padding:0;
+    height: 50px;
+  }
+
+  .menu {
+    list-style:none;
+    text-align: right;
+    display: inline;
+    margin:0;
+    }
+    
+    .menu > li{
+      display: inline-block;
+      position: relative;
+      margin-left: 15px;
+      margin-right:15px;
+      margin-top:20px;
+    }
+
+    h1 {
+    position:relative;
+    right:1100px;
+    color:white;
+    }
+
+    h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    }
+
+    p1 {
+      text-align: center;
+    }
+    #holder {
+      height: auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .box{
+      width: 450px;
+      background: rgba(0,0,0,0.4);
+      padding: 40px;
+      text-align: center;
+      margin: auto;
+      margin-top: 5%;
+      color:white;
+    }
+    img{
+      border-radius: 50%;
+      width:200px;
+      height: 200px;
+    }
+    .foo{
+      font-size: 50px;
+      letter-spacing: 4px;
+      font-weight: 100;
+    }
+    .box h5{
+      font-size: 25px;
+      letter-spacing: 3px;
+      font-weight: 100;
+    }
+    .box p{
+      text-align: justify;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+   .box li{
+     display: inline-block;
+     margin: 5px;
+     list-style: none;
+
+    }
+
+    .box li a{
+      color:white;
+      text-decoration: none;
+      font-size:60px;
+      transition: all ease-in-out 250ms;
+
+    }
+  .box li a:hover{
+    color:#CDBEBE;
+  }
+
+  .box-x {
+    width: 1000px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color:white;
+  }
+  .box-x img{
+    border-radius: 0%;
+    width: 800px;
+    height: 600px;
+  }
+  .box-x li{
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
+  }
+  .box-x li a{
+    color:white;
+      text-decoration: none;
+      font-size:30px;
+      transition: all ease-in-out 250ms;
+  }
+  .box-x ki a:hover{
+    color:#CDBEBE;
+  }
