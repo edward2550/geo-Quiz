@@ -1,38 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Edward</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
-    <link href="main.css" rel="stylesheet" type="text/css" /> 
+    <title> Geography Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="float-grid.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
+  
   <body>
-      <div class="box">
-        <img src="https://picsum.photos/id/180/2400/1600" alt="laptop" height="200" width="200">
-        <h2 div class="foo"> Wassup i go by Eddie! </h2>
-        <h5>Aspiring Web Developer- Scholar Athlete</h5>
-        <h4>
-          People tell me I'm a little insane… In reality, I just love the challenge of life!!
-
-        </h4>
-        <p>I'm a Divisional 1 scholar athlete currently enrolled in the bloc/thinkful boot camp, I'm an Aspiring Web Developer. I love the challenge I put my body through while preparing and playing football. The challenging of learning to code and learning languages motivates me to be great.
-        </p>
-        <ul>
-          <li><a href="https://github.com/edward2550"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/edward-nunez-a2b094175/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://wagnerathletics.com/roster.aspx?rp_id=11578"><i class="fas fa-football-ball"></i></a></li>
-        </ul>
+    <header role="banner">
+    <div class="row" >
+      <div class="col-12">
+        <h1> Geography Quiz</h1>
+      </div>
+    </div>
+  </header>
+  
+  <main role="main">
+    
+    <div class="row box js-start-page ">
+      <section class="start-heading">
+        <div class="col-12">
+          <h2>Get Started</h2>
+          <p>Are You a Master of GEOGRAPHY TRIVIA! </p>
         </div>
-      </div>
-      <div class="box-x">
-        <h3>This is my portfolio</h3>
-        <img src="http://i64.tinypic.com/16bwyhd.png" border="0" alt="Image and video hosting by TinyPic">
-        <p>A Quiz app i made using Javascript, Jquery, css and html</p>
-        <ul>
-          <li><a href="https://github.com/edward2550">Github</a></li>
-        </ul>
-      </div>
-    </section>
+      </section>
+      <form>
+        <section class="navigation js-start-navigation">
+          <div class="col-6 navigation-row get-started">
+            <button id="start" type="submit" class="btn">Start</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-question-page hidden">
+      <section class="question-heading">
+        <div class="col-12">
+          <h2>Question <span class="js-current-number">1</span> of <span class="js-total-number">10</span></h2>
+          <p class="js-current-question"></p>
+        </div>
+      </section>
+      <form>
+        <section class="all-answers">
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" role="radiogroup" class="option" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+        </section>
+        <section class="navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct<span class="js-correct-wrong"></span><span class="js-correct-answer-is"></span></p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="submit-answer" type="submit" class="btn">Next</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-final-page hidden">
+      <section class="final-heading">
+        <div class="col-12">
+          <h2>Quiz Complete!</h2>
+          <p>How did you do? go ahead and give the quiz another try. </p>
+        </div>
+      </section>
+      <form>
+        <section class="final-navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct</p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="restart-quiz" type="submit" class="btn">Try Again</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+  </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
