@@ -1,0 +1,75 @@
+body {
+    background-color: #1D252E;
+    background-image: url('https://picsum.photos/id/1000/5626/3635');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: top center; 
+  } 
+  
+  p, h2, span {
+    color: #1D252E;
+  }
+  
+  header {
+    min-height: 300px;
+  }
+  
+  h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 240px;
+    font-size: 3rem;
+  }
+  
+  .hidden {
+    display: none;
+  } 
+  
+  .box {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    max-width: 800px;
+    min-width: 400px;
+    margin-bottom: 60px;
+  }
+  
+  .btn {
+    border: none;
+    color: #FFFFFF;
+    background-color: #1D252E;
+    padding: 5px 20px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn:hover, .btn:active, .btn:focus {
+    background-color: #295F12;
+  }
+  
+  .answer-options, .question-box p {
+    margin-bottom: 30px;
+  }
+  
+  .option {
+    margin-right: 10px;
+  }
+  
+  .navigation-row {
+    margin-top: 30px;
+  }
+  
+  .number-correct {
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  #submit-answer, #restart-quiz {
+    float: right;
+  }
+  
+  .green-highlight {
+    border: 1px solid green;
+  }
+  
+  .red-highlight {
+    border: 1px solid red;
+  }
