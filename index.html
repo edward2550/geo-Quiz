@@ -1,97 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>PORTFOLIO -- initial page load</title>
-    <!-- ICON FONT -->
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="theme.css" rel="stylesheet" type="text/css">
+    <title> Geography Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="float-grid.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" media="screen and (max-width: 700px)" href="smallscreen.css">
   </head>
+  
   <body>
-    <section class="top">
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#jump1">project</a></li>
-        <li><a href="#jump2">contact</a></li>
-      </ul>
-    </nav>
-  </section>
-    <section class="banner">
-      <h1>Hi i'm Edward &#x1F44B;</h1>
-    </section>
-    <section class="what-i-do">
-      <h2>ASPIRING Junior Developer</h2>
-      <ul>
-        <li>
-          <h3> Edward Nunez &#x1f409; </h3>
-          <p>
-             I am a Junior business major at Wagner College and currently enrolled in the Front End Web Development Career Path bootcamp at Thinkful. 
-             I am also a NCAA Division 1 Football Scholar-Athlete.
-          </p>
-        </li>
-        <li>
-          <h3> code &#x2728; </h3>
-          <p> skilled in  HTML, CSS, Javascript, jQuery,
-              inteserted in learning more coding and mastering them. 
-          </p>
-        </li>
-        
-      </ul>
-    </section>
-    <section class="projects">
-      <span id="jump1">
-      <h2>Projects</h2>
-    </span>
-      <ul>
-        <li class="project">
-          <img src="http://i64.tinypic.com/16bwyhd.png"  >
-          <h3>
-            <a> Geographic Quiz </a>
-          </h3>
-          <p> A quiz App about the world Geographic, to test people knowlege about the world!!</p>
-          <ul class="tags">
-            <li>Javascript</li>
-            <li>Jquery</li>
-            <li>HTML</li>
-            <li>Css</li>
-          </ul>
-          <button>
-            <a href="https://repl.it/@edwardnunez/geo-quiz"> View website </a>
-            <p>or</p>
-            <a href="https://github.com/edward2550/geo-Quiz"> View Code </a>
-          </button>
-        </li>
-        <span id="jump2">
-    <section class="about">
-      </span>
-      <h2>About me</h2>
-      <img src="https://picsum.photos/id/180/2400/1600" alt="laptop" height="200" width="200">
-      <p> Immigrant kid with a chip on a shoulder with a passion of learning anything about the technological world especially programming. </p>
-      <button>
-        <p>contact
-          email: Edwardnunez31@gmail.com cell: 347-749-3019
-        </p>
-      </button>
-    </section>
+    <header role="banner">
+    <div class="row" >
+      <div class="col-12">
+        <h1> Geography Quiz</h1>
+      </div>
+    </div>
+  </header>
+  
+  <main role="main">
     
-    <footer>
+    <div class="row box js-start-page ">
+      <section class="start-heading">
+        <div class="col-12">
+          <h2>Get Started</h2>
+          <p>Are You a Master of GEOGRAPHY TRIVIA! </p>
+        </div>
+      </section>
+      <form>
+        <section class="navigation js-start-navigation">
+          <div class="col-6 navigation-row get-started">
+            <button id="start" type="submit" class="btn">Start</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-question-page hidden">
+      <section class="question-heading">
+        <div class="col-12">
+          <h2>Question <span class="js-current-number">1</span> of <span class="js-total-number">10</span></h2>
+          <p class="js-current-question"></p>
+        </div>
+      </section>
+      <form>
+        <section class="all-answers">
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" role="radiogroup" class="option" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+        </section>
+        <section class="navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct<span class="js-correct-wrong"></span><span class="js-correct-answer-is"></span></p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="submit-answer" type="submit" class="btn">Next</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-final-page hidden">
+      <section class="final-heading">
+        <div class="col-12">
+          <h2>Quiz Complete!</h2>
+          <p>How did you do? go ahead and give the quiz another try. </p>
+        </div>
+      </section>
+      <form>
+        <section class="final-navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct</p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="restart-quiz" type="submit" class="btn">Try Again</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+  </main>
 
-      <ul class="media">
-              <li><a href="https://github.com/edward2550"><i class="fab fa-github-square"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/edward-nunez-a2b094175"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://wagnerathletics.com/roster.aspx?rp_id=11578"><i class="fas fa-football-ball"></i></a></li>
-            </ul>
-      <p> Edwardnunez31@gmail.com </p>
-      <p>&copy; Edward Nuenz 2019</p>
-    </footer>
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
